@@ -62,6 +62,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2902F7942396E165007926B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		29FD9A672396C19D00C4C99D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +90,7 @@
 		29FD9A722396C19D00C4C99D /* glassAPP */ = {
 			isa = PBXGroup;
 			children = (
+				2902F7942396E165007926B1 /* Models */,
 				29FD9A962396D25F00C4C99D /* Views */,
 				29FD9A732396C19D00C4C99D /* AppDelegate.swift */,
 				29FD9A752396C19D00C4C99D /* ViewController.swift */,

@@ -12,6 +12,12 @@ class ViewController: UIViewController {
 
     var userType = true
     
+    //MARK: atributtes
+    @IBOutlet weak var userTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    
+    
+    
     @IBAction func selectSegue(_ sender: UIButton) {
         if userType {
             performSegue(withIdentifier: "userView", sender: self)
@@ -25,6 +31,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // any a
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background.png")!)
+        userTxt.attributedPlaceholder = NSAttributedString(string: "User",
+                                                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "Password",
+                                                           attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
     }
 
 
