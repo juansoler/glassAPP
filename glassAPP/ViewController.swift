@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var userType = true
+    
+    @IBAction func selectSegue(_ sender: UIButton) {
+        if userType {
+            performSegue(withIdentifier: "userView", sender: self)
+        }else {
+            performSegue(withIdentifier: "adminView", sender: self)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // any a

@@ -14,6 +14,8 @@
 		29FD9A7E2396C19E00C4C99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FD9A7D2396C19E00C4C99D /* Assets.xcassets */; };
 		29FD9A812396C19E00C4C99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FD9A7F2396C19E00C4C99D /* LaunchScreen.storyboard */; };
 		29FD9A8C2396C19F00C4C99D /* glassAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD9A8B2396C19F00C4C99D /* glassAPPTests.swift */; };
+		29FD9A982396D2BF00C4C99D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD9A972396D2BF00C4C99D /* UserViewController.swift */; };
+		29FD9A9A2396D31800C4C99D /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD9A992396D31800C4C99D /* AdminViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		29FD9A872396C19F00C4C99D /* glassAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glassAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FD9A8B2396C19F00C4C99D /* glassAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glassAPPTests.swift; sourceTree = "<group>"; };
 		29FD9A8D2396C19F00C4C99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29FD9A972396D2BF00C4C99D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		29FD9A992396D31800C4C99D /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		29FD9A722396C19D00C4C99D /* glassAPP */ = {
 			isa = PBXGroup;
 			children = (
+				29FD9A962396D25F00C4C99D /* Views */,
 				29FD9A732396C19D00C4C99D /* AppDelegate.swift */,
 				29FD9A752396C19D00C4C99D /* ViewController.swift */,
 				29FD9A772396C19D00C4C99D /* Main.storyboard */,
@@ -97,6 +102,15 @@
 				29FD9A8D2396C19F00C4C99D /* Info.plist */,
 			);
 			path = glassAPPTests;
+			sourceTree = "<group>";
+		};
+		29FD9A962396D25F00C4C99D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29FD9A972396D2BF00C4C99D /* UserViewController.swift */,
+				29FD9A992396D31800C4C99D /* AdminViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FD9A762396C19D00C4C99D /* ViewController.swift in Sources */,
+				29FD9A982396D2BF00C4C99D /* UserViewController.swift in Sources */,
 				29FD9A742396C19D00C4C99D /* AppDelegate.swift in Sources */,
+				29FD9A9A2396D31800C4C99D /* AdminViewController.swift in Sources */,
 				29FD9A7C2396C19D00C4C99D /* glassAPP.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
