@@ -9,11 +9,16 @@
 import UIKit
 
 class UserViewController: UIViewController {
-
+    
+    //MARK: atributtes
+    @IBOutlet weak var btnCase: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background.png")!)
     }
     
     @IBAction func logout(_ sender: UIBarButtonItem) {
@@ -29,5 +34,5 @@ class UserViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

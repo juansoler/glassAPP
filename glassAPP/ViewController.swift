@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var userType = true
+    var userType = false
     
     //MARK: atributtes
     @IBOutlet weak var userTxt: UITextField!
