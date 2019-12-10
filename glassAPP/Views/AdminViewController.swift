@@ -48,10 +48,15 @@ class AdminViewController: UIViewController {
     */
 
     @IBAction func homeShow(_ sender: UIButton) {
-        homeButton.isSelected = true;
-        addUserButton.isSelected = false;
-        addCaseButton.isSelected = false;
-        addTeamButton.isSelected = false;
+
+        homeButton.backgroundColor = viewHome.backgroundColor
+        addUserButton.backgroundColor = UIColor.orange
+        addCaseButton.backgroundColor = UIColor.orange
+        addTeamButton.backgroundColor = UIColor.orange
+        //homeButton.isSelected = true;
+        //addUserButton.isSelected = false;
+        //addCaseButton.isSelected = false;
+        //addTeamButton.isSelected = false;
         
         viewHome.isHidden = false;
         viewUserAadd.isHidden = true;
@@ -60,11 +65,17 @@ class AdminViewController: UIViewController {
     }
     
     @IBAction func addUserShow(_ sender: UIButton) {
+        homeButton.backgroundColor = UIColor.orange
+        addUserButton.backgroundColor = viewHome.backgroundColor
+        addCaseButton.backgroundColor = UIColor.orange
+        addTeamButton.backgroundColor = UIColor.orange
+        
+        /*
         homeButton.isSelected = false;
         addUserButton.isSelected = true;
         addCaseButton.isSelected = false;
         addTeamButton.isSelected = false;
-        
+        */
         viewHome.isHidden = true;
         viewUserAadd.isHidden = false;
         viewCaseAdd.isHidden = true;
@@ -72,11 +83,17 @@ class AdminViewController: UIViewController {
     }
     
     @IBAction func addCaseShow(_ sender: UIButton) {
+        homeButton.backgroundColor = UIColor.orange
+        addUserButton.backgroundColor = UIColor.orange
+        addCaseButton.backgroundColor = viewHome.backgroundColor
+        addTeamButton.backgroundColor = UIColor.orange
+        
+        /*
         homeButton.isSelected = false;
         addUserButton.isSelected = false;
         addCaseButton.isSelected = true;
         addTeamButton.isSelected = false;
-        
+        */
         viewHome.isHidden = true;
         viewUserAadd.isHidden = true;
         viewCaseAdd.isHidden = false;
@@ -84,11 +101,17 @@ class AdminViewController: UIViewController {
     }
     
     @IBAction func addTeamShow(_ sender: UIButton) {
+        homeButton.backgroundColor = UIColor.orange
+        addUserButton.backgroundColor = UIColor.orange
+        addCaseButton.backgroundColor = UIColor.orange
+        addTeamButton.backgroundColor = viewHome.backgroundColor
+        
+        /*
         homeButton.isSelected = false;
         addUserButton.isSelected = false;
         addCaseButton.isSelected = false;
         addTeamButton.isSelected = true;
-        
+        */
         viewHome.isHidden = true;
         viewUserAadd.isHidden = true;
         viewCaseAdd.isHidden = true;
